@@ -1,4 +1,4 @@
-server = 'intelli1.database.windows.net'
-ddatabase = 'azuredevopsdb'
-username = 'intelli'
-password = 'Admin@123'
+server = 'azuredevopsprojectsqlserver.database.windows.net'
+ddatabase = 'azuredevopssqldatabase'
+username = 'azuredevopssqlserver'
+password = 'Akshayshukla123@'
