@@ -24,7 +24,7 @@ def migrate():
     data = kmeans.predict()
 # pandas df to use
     for i, row in data.iterrows():
-        dcursor.execute("INSERT INTO dbo.Person5 (CustomerID, Amount, Frequency, Recency, ClusterID) Values (?,?,?,?,?)", row.CustomerID, row.Amount, row.Frequency, row.Recency, row.Cluster_Id)
+        dcursor.execute("INSERT INTO dbo.datascience (CustomerID, Amount, Frequency, Recency, ClusterID) Values (?,?,?,?,?)", row.CustomerID, row.Amount, row.Frequency, row.Recency, row.Cluster_Id)
         dest.commit()
     return "<h1>Prediction Done</h1>"
 
